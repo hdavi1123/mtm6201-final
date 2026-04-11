@@ -125,19 +125,71 @@ footer{
 }
 
 
+
 .hero {
-  background: url('../images/header.jpg') no-repeat center/cover;
+  background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url('../images/header.jpg') no-repeat center/cover;
+
   height: 400px;
+
   display: flex;
-  align-items: center;
-  padding-left: 40px;
+  align-items: center;        /* vertical center */
+  justify-content: flex-start;/* pushes content left */
+
+  padding-left: 60px;
   color: white;
 }
+
+
+
+
 
 .hero-content h1 {
   font-size: 40px;
   margin-bottom: 15px;
+
+  max-width: 300px; /* makes text stack nicely */
+
+  /* text shadow */
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
+
+
+
+
+
+
+.featured {
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+.featured h2 {
+  margin-bottom: 20px;
+}
+
+
+
+
+.button-link {
+  display: inline-block;
+  margin-top: 10px;
+
+  background-color: #5c7266;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+
+  /* shadow */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
 
 
 
@@ -188,4 +240,13 @@ footer{
         padding: 10px 0;
         width: 100%;
     }
+    .hero {
+    height: 250px;
+    padding-left: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+    max-width: 200px;
+  }
 }
