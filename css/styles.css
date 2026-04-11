@@ -121,7 +121,26 @@ footer{
     background-color: #d8cfc4;
     padding: 15px;
     margin-top: 30px;
+
 }
+
+
+.hero {
+  background: url('../images/header.jpg') no-repeat center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+
+
 
 /* tablet */
 
