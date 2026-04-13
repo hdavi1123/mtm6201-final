@@ -124,6 +124,11 @@ footer{
 
 }
 
+footer p {
+  font-size: 22px;     
+  font-weight: bold;   
+}
+
 
 
 .hero {
@@ -134,8 +139,8 @@ footer{
   height: 400px;
 
   display: flex;
-  align-items: center;        /* vertical center */
-  justify-content: flex-start;/* pushes content left */
+  align-items: center;        
+  justify-content: flex-start;
 
   padding-left: 60px;
   color: white;
@@ -149,9 +154,9 @@ footer{
   font-size: 40px;
   margin-bottom: 15px;
 
-  max-width: 300px; /* makes text stack nicely */
+  max-width: 300px; 
 
-  /* text shadow */
+  
   text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
 
@@ -184,17 +189,66 @@ footer{
   border-radius: 20px;
   text-decoration: none;
 
-  /* shadow */
+
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 
 
+.contact {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.contact-info {
+  text-align: left;
+  max-width: 250px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #d9cfc5;
+  font-family: inherit;
+}
+
+
+.contact-form button {
+  background-color: #5c7266;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact-box {
+  background: white;
+  border: 1px solid #d9cfc5;
+  border-radius: 16px;
+  padding: 20px;
+  width: 300px;
+}
 
 
 
 
-/* tablet */
 
 @media (max-width: 900px){
     .card{
@@ -202,7 +256,6 @@ footer{
     }
 }
 
-/* phone */
 
 @media (max-width: 600px){ 
 .card-container{
@@ -248,5 +301,14 @@ footer{
   .hero-content h1 {
     font-size: 24px;
     max-width: 200px;
+  }
+
+    .contact-container {
+    flex-direction: column;  
+    align-items: center;     
+  }
+
+  .contact-box {
+    width: 90%;              
   }
 }
