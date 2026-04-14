@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- To link this html file to the css file!! -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Adopt - Paws & Whiskers </title>
 </head>
 <body>
 
-    
+    <!-- this is the header for the website. it has the logo and the info for the nav. I also decided to add a drop down menu for when the screen size is smaller! -->
 <header>
 
+    <!-- the logo! -->
     <div class="logo">
         <img src="images/logo.png" alt="paws and Whiskers logo">
     </div>
 
+    <!-- the drop down menu -->
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle" class="menu-icon">☰</label>
   
 
-
+    <!-- nav info that allows you to click between the html pages! -->
     <nav id="nav-menu">
         <a href="adopt.html">Adopt</a>
         <a href="index.html">Home</a>
@@ -32,20 +35,27 @@
 
 <main>
 
+    <!-- this is the section that has all the animal cards in it for this page. It has the 3 animals listed for adoption on the page! -->
+
 <section class="animals">
+
     <h1>Animals Available</h1>
 
+    <!-- this class holds all the animal cards so i can use flexbox and make changes to them all at once in the css file! -->
     <div class="card-container">
-
+        <!-- this class is so I can edit the style of the cards! -->
         <div class="card">
             <div class="image-container">
+                <!-- this wrapper is so i can control the images sizes and keep the layout consistant -->
                 <img src="images/milo.jpg" alt="White fluffy cat named milo">
             </div>
             <h2>Milo</h2>
             <p>Friendly white Persian cat looking for a forever home.</p>
+            <!-- this is for the adoption button that is on the cards! -->
             <button>Adopt</button>
         </div>
 
+        <!-- All the same process for the 2 other cards below!! -->
         <div class="card">
             <div class="image-container">
                 <img src="images/buddy.jpg" alt="Small brown dog named buddy">
@@ -70,6 +80,7 @@
 
 </main>
 
+<!-- this is the footer which holds the call to action which encourages users to donate -->
 <footer>
     <p>Help Us Save More Pets. Donate Today!</p>
     <button>Donate</button>

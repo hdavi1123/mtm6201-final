@@ -1,5 +1,5 @@
-/* ABOUT PAGE */
 
+/* this is to set the overall style for all body text on the sites! this includes the font, margin, colour and background colour! */
 body{
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +7,7 @@ body{
     color: #5c7266;
 }
 
+/* this is the styling for the header! i used flex to position the nav info on the right side of the header/nav and the logo on the left. I added space between each word and added padding and background colour  */
 header{
     display: flex;
     justify-content: space-between;
@@ -16,15 +17,19 @@ header{
     border-bottom: 1px solid #ddd;
 }
 
+
+/* this is to control the size of the logo!  */
 .logo img {
     height: 120px;
 }
 
+/* this makes the nav horizontal and aligns the navagation using flex! */
 nav {
     display: flex;
     align-items: center;
 }
 
+/* this is the styling of the nav links and the space between them! Using things like margin, colour and font-size. */
 nav a{
     margin: 0 15px;
     text-decoration: none;
@@ -32,6 +37,8 @@ nav a{
     font-size: 14px;
 }
 
+
+/* this is the styling for the donate button in the header. I wanted it to stand out from the other buttons like it does in my wireframes. I used background colour. colour, padding and border radius to achieve this! */
 .donate-btn {
     background-color: #5c7266;
     color: white;
@@ -40,7 +47,7 @@ nav a{
 }
 
 
-
+/* this is the styling for the main heading on the animal cards. It centers it as well as other styling things. I used text align to center it on tge card. I also used background colour, padding, width, margin, border radius, font size and border to get it most similar to my wireframes!*/
 .animals h1{
     text-align: center;
     background-color: #d9cfc5;
@@ -52,6 +59,7 @@ nav a{
     border: 1px solid #c4b8aa;
 }
 
+/* this uses flex to have the cards have the layout of the cards be even and wrap them when the screen becomes smaller */
 .card-container{
     display: flex;
     justify-content: center;
@@ -60,7 +68,7 @@ nav a{
     flex-wrap: wrap;
 }
 
-
+/* this is the styling for the cards! I have the styling make each card have round corners, padding and a drop shadow and a small border! */
 .card{
     background-color: white;
     width: 280px;
@@ -71,7 +79,7 @@ nav a{
     border: 1px solid #4f5f57;
 }
 
-
+/* this just makes sure all images are the same size and do not stretch on the pages */
 .image-container {
     width: 100%;
     height: 180px;
@@ -80,6 +88,7 @@ nav a{
     border: 1px solid #d9cfc5;
 }
 
+/* this is to make the images fill the containers while still keeping its proper sizing! */
 .image-container img {
     width: 100%;
     height: 100%;
@@ -88,7 +97,7 @@ nav a{
 }
 
 
-
+/* this is the styling for all the buttons on each page to keep everything consistant! I also added a cursor function so when a user hovers over the button their pointer cursor will appear! */
 button{
     background-color: #5c7266;
     color: white;
@@ -99,23 +108,26 @@ button{
     cursor: pointer;     
 }
 
+/* this allows the drop down menu elements to hide by default so it will only be seen in smaller screensizes! */
 .menu-toggle {
   display: none;
   font-size: 24px;
   cursor: pointer;
 }
 
+/* this is to hide the checkbox used for the mobile drop down menu */
 #menu-toggle {
   display: none;
 }
 
+/* this is the styling for the icon/the 3 little lines! */
 .menu-icon {
   display: none;
   font-size: 24px;
   cursor: pointer;
 }
 
-
+/* this is the styling for the footer! I cenetred the text and added a background colour */
 footer{
     text-align: center;
     background-color: #d8cfc4;
@@ -124,83 +136,67 @@ footer{
 
 }
 
+/* I wanted to make the text bigger and bold and this styling does that! */
 footer p {
   font-size: 22px;     
   font-weight: bold;   
 }
 
 
-
+/* this is for the hero section. I added the background image here! It has a little overlay so we are able to read the text that will be on top of this image!*/
 .hero {
   background: 
     linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
     url('../images/header.jpg') no-repeat center/cover;
 
   height: 400px;
-
   display: flex;
   align-items: center;        
   justify-content: flex-start;
-
   padding-left: 60px;
   color: white;
 }
 
 
-
-
-
+/* this is the styling for the main hero text that is on top of the image above! */
 .hero-content h1 {
   font-size: 40px;
   margin-bottom: 15px;
-
   max-width: 300px; 
-
-  
   text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
 
 
-
-
-
-
+/* this centers the featured section that is above the cards on the home page! */
 .featured {
   text-align: center;
   margin-top: 30px;
 }
-
-
 
 .featured h2 {
   margin-bottom: 20px;
 }
 
 
-
-
+/* this is the styling for the hero button. I added shadows like my wireframes has so it looks more clickable! */
 .button-link {
   display: inline-block;
   margin-top: 10px;
-
   background-color: #5c7266;
   color: white;
   padding: 10px 18px;
   border-radius: 20px;
   text-decoration: none;
-
-
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-
-
+/* this is the layout and spacing for the contact page */
 .contact {
   padding: 30px 20px;
   text-align: center;
 }
 
-
+/* this is the contact container which holds the cards. It uses flexbox to have the contact info and the form side by side on the site */
 .contact-container {
   display: flex;
   justify-content: center;
@@ -208,11 +204,13 @@ footer p {
   margin-top: 20px;
 }
 
+/* this is the styling for the contact info text! */
 .contact-info {
   text-align: left;
   max-width: 250px;
 }
 
+/* and this is the styling for the contact form using column direction */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -220,6 +218,7 @@ footer p {
   width: 300px;
 }
 
+/* this is the styling for the form input spaces and the textarea */
 .contact-form input,
 .contact-form textarea {
   padding: 10px;
@@ -228,7 +227,7 @@ footer p {
   font-family: inherit;
 }
 
-
+/* this is the styling for the contact form button */
 .contact-form button {
   background-color: #5c7266;
   color: white;
@@ -238,6 +237,7 @@ footer p {
   cursor: pointer;
 }
 
+/* this is the styling for the contact box. It allows me to match the design that is used for the other pages! */
 .contact-box {
   background: white;
   border: 1px solid #d9cfc5;
@@ -247,17 +247,19 @@ footer p {
 }
 
 
+/* These are the media queries! */
 
 
-
+/* the first one is for tablet sizes! for this size the cards become wider */
 @media (max-width: 900px){
     .card{
         width: 45%;
     }
 }
 
-
+/* this is for the mobile size which has a lot more just because of the drop down menu! */
 @media (max-width: 600px){ 
+  /* this is so the cards will stack vertically on smaller screens */
 .card-container{
         flex-direction: column;
         align-items: center;
@@ -267,15 +269,18 @@ footer p {
         width: 90%;
     }
 
+    /* this is to stack the header elements */
     header {
         flex-direction: column;
         align-items: flex-start;
     }
 
+    /* this is to show the three line icon for the drop down menu */
     .menu-icon {
         display: block;
     }
 
+    /* this is the hide the nav by default and turn into the drop down menu when in this smaller screen size */
     nav {
         display: none;
         flex-direction: column;
@@ -285,6 +290,7 @@ footer p {
         padding: 10px;
     }
 
+    /* this is to show the nav when the drop down menu is clicked on */
     #menu-toggle:checked + .menu-icon + nav {
         display: flex;
     }
@@ -293,6 +299,8 @@ footer p {
         padding: 10px 0;
         width: 100%;
     }
+
+    /* this is to adjust the hero section for smaller screens */
     .hero {
     height: 250px;
     padding-left: 20px;
@@ -303,6 +311,7 @@ footer p {
     max-width: 200px;
   }
 
+  /* this is to stack the contact boxes vertically when on the smaller screen size */
     .contact-container {
     flex-direction: column;  
     align-items: center;     

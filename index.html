@@ -4,51 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- To link this html file to the css file!! -->
     <title>Home - Paws & Whiskers</title>
 </head>
 <body>
     
+    <!-- this is the header which contains the logo, drop down menu and nav! -->
 <header>
+    <!-- this is the logo -->
     <div class="logo">
         <img src="images/logo.png" alt="P & W logo">
     </div>
 
+<!-- this is the drop down menu for mobile users! -->
 <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">☰</label>
-
+<label for="menu-toggle" class="menu-icon">☰</label>
+ 
+<!-- this is the nav menu that allows users to click through each html page! -->
         <nav id="nav-menu">
-        <a href="adopt.html">Adopt</a>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="#">Volunteer</a>
-        <a href="#" class="donate-btn">Donate</a>
-    </nav>
+            <a href="adopt.html">Adopt</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Volunteer</a>
+            <a href="#" class="donate-btn">Donate</a>
+        </nav>
 </header>
 
 <section class="hero">
+    <!-- this is classifying this page as the hero page! -->
 
     <div class="hero-content">
+        <!-- this is the container that I used to position the text over the baclground image -->
         <h1>Find Your New Best Friend.</h1>
     <button class="button-link" onclick="location.href='adopt.html'">View Animals</button>
     </div>
     
 </section>
 
+<!-- these are the cards for the 3 animals again! -->
 <section class="featured">
     <h2>Featured Animals</h2>
+    <!-- this is the text that is centered above the animal cards -->
 
     <div class="card-container">
+        <!-- this container holds all of the animal cards -->
 
         <div class="card">
+            <!-- this class is so I am able to style the cards! -->
             <div class="image-container">
+                <!-- this wrapper is so I can size the images how I like and it also allows me to edit the images consistanly with all three cards! -->
                 <img src="images/milo.jpg" alt="white persian cat named milo">
             </div>
                <h3>Milo</h3>
                <p>Friendly white Persian cat looking for a loving home.</p>
+               <!-- the adopt button! -->
                <button>Adopt</button>
 
         </div>
 
+        <!-- same process for the other 2 cards! -->
         <div class="card">
             <div class="image-container">
                 <img src="images/buddy.jpg" alt="small brown dog named buddy">
@@ -70,6 +84,7 @@
     </div>
 </section>
 
+<!-- this is the footer that contains the call to action message with the donation button underneath! -->
 <Footer>
     <p>Help Us Save More Pets. Donate Today!</p>
     <button>Donate</button>
